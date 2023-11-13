@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@300;400&family=Roboto:wght@400;500;700&display=swap');
+
+html {
+    font-family: "mukta", sans-serif;
+}
+
+.video-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+#video-bg {
+    width: 100%;
+}
+
+.mascara-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background: rgba(0, 0, 0, .9); */
+    background: linear-gradient(109deg, rgba(10,12,16, 0.99) 15%, rgba(10,12,16, 0.7)50%, rgba(10,12,16, 0.99)85%);
+    z-index: -1;
+}
+
+.container-principal {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.esquerda {
+    width: 800px;
+}
+
+.direita {
+    width: 30%;
+}
+
+.esquerda img {
+    width: 300px;
+}
+
+.esquerda p {
+    font-size: 25px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.esquerda button {
+    background-color: #C51111;
+    color: #fff;
+    width: 200px;
+    height: 40px;
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: .2s ease-in-out;
+}
+
+.esquerda button:hover {
+    color: #C51111;
+    background-color: #fff;
+
+}
+
+.fale-conosco {
+    position: fixed;
+    top: 30%;
+    left: -300px;
+    width: 350px;
+    border-radius: 10px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 30px;
+    transition: .3s ease-in-out;
+    opacity: 0;
+}
+
+.fale-conosco input {
+    border: solid 1px gray;
+    height: 40px;
+    padding: 10px;
+    border-radius: 3px;
+}
+
+.fale-conosco input:focus {
+    outline: auto;
+    outline-color: chartreuse;
+}
+
+.fale-conosco textarea {
+    border: solid 1px gray;
+    padding: 10px;
+    border-radius: 3px;
+}
+
+.fale-conosco textarea:focus {
+    outline: auto;
+    outline-color: chartreuse;
+}
+
+.fale-conosco #btn-form {
+    background-color: #C51111;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+.fale-conosco .fechar-janela {
+    margin: -10px;
+    text-align: right;
+    cursor: pointer;
+}

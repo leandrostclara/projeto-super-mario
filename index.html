@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super Mario - O Filme</title>
+
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/style.css">
+
+    <script src="./src/scripts/script.js" defer></script>
+</head>
+<body>
+    <main>
+        <div class="video-container">
+            <video autoplay muted loop id="video-bg">
+                <source src="./src/images/video.mp4" type="video/mp4">
+                Seu navegador não suporta a tag de video.
+            </video>
+        </div>
+        <div class="mascara-video"></div>
+        <div class="container-principal">
+            <div class="esquerda">
+                <img src="./src/images/logo.png" alt="logo mario">
+                <p>Encanadores Mario & Luigi - Resolvendo Seus Problemas Com Estilo!</p>
+                <p>Você já se encontrou em uma situação de emergência com encanamento? Vazamentos inesperados, canos entupidos ou torneiras que não param de pingar? Não se preocupe, porque estamos aqui para salvar o dia! Apresentamos a vocês os encanadores mais famosos do Reino dos Cogumelos - Mario e Luigi!</p>
+                <button onclick="showForm()">Fale conosco</button>
+            </div>
+            <div class="direita">
+                <img src="./src/images/mario.png" alt="mario e luigi">
+            </div>
+        </div>
+        <form action="" method="get" class="fale-conosco">
+            <div class="fechar-janela" onclick="fecharJanela()"> <p>X</p> </div>
+            <input type="text" name="nome" placeholder="Seu nome">
+            <input type="tel" name="telefone" placeholder="Seu telefone">
+            <textarea name="info" id="info" cols="30" rows="6" placeholder="Digite seu problema aqui"></textarea>
+            <input type="submit" value="Enviar formulário" id="btn-form">
+        </form>
+    </main>
+</body>
+</html>
