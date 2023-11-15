@@ -120,4 +120,5 @@ html {
     margin: -10px;
     text-align: right;
     cursor: pointer;
+    align-self: flex-end;
 }
